@@ -1,0 +1,7 @@
+env:
+  - HAPI_VERSION="19"
+  - HAPI_VERSION="20"
+
+install:
+  - "npm install"
+  - "npm install @hapi/hapi@$HAPI_VERSION"

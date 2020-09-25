@@ -1,0 +1,11 @@
+os:
+  - "linux"
+  - "windows"
+
+# Tests on certain modules (e.g. hpal) utilize symlinks,
+# which otherwise wont work as expected on windows.
+before_script: |
+  if [[ "${TRAVIS_OS_NAME}" == "windows" ]]; then
+    git config core.symlinks true
+    git reset --hard
+  fi
