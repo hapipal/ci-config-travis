@@ -5,3 +5,10 @@ env:
 install:
   - "npm install"
   - "npm install @hapi/hapi@$HAPI_VERSION"
+
+jobs:
+  exclude:
+    - env: HAPI_VERSION="20"
+      node_js: "18"
+    - env: HAPI_VERSION="20"
+      node_js: "node"
