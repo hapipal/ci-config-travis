@@ -1,15 +1,7 @@
 env:
-  - HAPI_VERSION="19"
   - HAPI_VERSION="20"
   - HAPI_VERSION="21"
 
 install:
   - "npm install"
   - "npm install @hapi/hapi@$HAPI_VERSION"
-
-jobs:
-  exclude:
-    - env: HAPI_VERSION="21"
-      node_js: "12"
-    - env: HAPI_VERSION="21"
-      node_js: "14"
