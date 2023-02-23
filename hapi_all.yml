@@ -1,6 +1,6 @@
 env:
-  - HAPI_VERSION="19"
   - HAPI_VERSION="20"
+  - HAPI_VERSION="21"
 
 install:
   - "npm install"
